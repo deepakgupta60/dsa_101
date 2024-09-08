@@ -40,6 +40,110 @@
 // are you end up with bugs. debugging, some issue to it. one after the other.
 
 // debugging - identification and removal of bugs/ errors in the code
+
+
+
+
+// #### Session 3 ####
+
+// what should be time and space complexity
+
+milestone 1: understand the problem clearly
+>> understand the problem / question 
+
+milestone 2: finalize approach and execution plan
+>> finalize the approach / how to implement / multiple solutions to solve a particular problem. according to sc and tc choose which one is best.
+e.g. array should be sorted on descending order..
+using inbuilt method or using whole problem
+
+milestone 3: write a pseudo code according to code deliver. 
+>> we can create multiple ways / methods.
+
+milestone 4: code out things, actual code write.
+>> use librarie as much as possible
+
+milestone 5: prove code work using custom test cases.
+>> where code is working or not.
+
+// throughly > nothing is miss..
+
+
+What are collections?
+>> group of data stucture that can holds multiple value.
+
+Specific about Javascript: Arrays, Objects, Map, Set and other built in structures can be considered collections..
+
+don't need to create data structure by scratch, you can use inbuilt collections, you can focus on logic, nothing else.
+
+What is an Array?
+>> store items (generally, similar type) in continguous memory location.
+
+arr = [1,2,3,4] --> how can i get the value from the array use indexas > arr[0] > index is nothing but memory location..
+
+what is benefits of array?
+>> we can search and get any value.. arr[1]-- retrieve value very easily.
+
+what will be the time complexity of these methods?
+
+arr.push > to add at the end of the array
+arr.pop > remove from at the end
+arr.unshift > add at the start of the array
+arr.shift > remove the array at the starting point.
+
+time and space complexity in every, with push are we simply adding number at the end..
+
+
+
+
+
+const printName = () => {
+	console.log("Hello Deepak");
+}
+
+const printNewName = () => {
+	console.log("Hello Mayank");
+}
+console.log("start");
+
+const timerId = setTimeout(() => {
+	printName();
+},2000)
+
+console.log(timerId);
+const timerId1 = setTimeout(() => {
+	printName();
+},2000)
+
+clearTimeout(timerId1);
+
+console.log("end");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
 // 1. important skill that comes when writing and executing code.
 
 // Programming Constructs
