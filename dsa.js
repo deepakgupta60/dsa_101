@@ -205,3 +205,69 @@ console.log(res.join(" "))
 // Reverse =["a","b","c"].reverse()
 
 
+
+
+// let arr [3,4,5,2,6];
+// how to check array is sorted or not?
+
+(function main(){
+  
+  let ans = isPalindrom();
+  console.log("Answer is: ",ans)
+}())
+
+
+
+function isPalindrom()
+{
+  let str="apaa"
+  // let arr=str.split(" ")
+  // let n=str.length
+  let left=0, right=str.length-1;
+   while(left<=right)
+     {
+      
+       if(str[left]!==str[right])
+         {
+           return false
+         }
+       left++
+       right--
+     }
+  return true
+  
+}
+// function isSortedArr()
+// {
+//   let arr =[1,3,4,1]
+//   let left=0, right=1
+//   while(right<arr.length) //1,2,3,4,5
+//   {
+//     if(arr[left]>arr[right])
+//       {
+//         return false
+//       }
+//     left++
+//     right++
+//   }
+//   return true
+// }
+// function isSortedArr()
+// {
+// let arr=[1,2,6,5]
+  
+// for(let i=0;i<arr.length;i++)
+//   {
+//     if(arr[i]>arr[i+1] )
+//       {
+//         return "False"
+//       }
+//   }
+//   return "true"
+// }
+
+
+
+
+
+
