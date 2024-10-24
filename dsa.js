@@ -270,4 +270,48 @@ function isPalindrom()
 
 
 
+// what ?
+  
+//   2d array, grid like structure.
+//   think of 1d array stacked on top of each other.
+//   have the concept of rows and columns.
+
+// Why ?
+//   Heavily used in real life, example board games
+//   used in graph, backtracking, dynamic programming..
+
+// traversing of the matrix
+
+// let arr = [[1,2,3]]
+
+
+
+
+// TC: NxM ->
+// SC: 
+// console.log(matrix[1].length)
+
+
+// let originObj = {a:10, b:20}
+
+// var shallow = {...originObj}
+
+// originObj.a=50
+
+// console.log(shallow)
+
+
+// Session 5 
+
+// matrix - 2d or multidimentional array -> array inside array is a matrix
+// how do we initialize the matrix
+// binary search - 
+
+// let arr = [[1,2,3],[2,3,4],[2,3,4]]
+
+
+// console.log(arr[2])
+
+
+
 
