@@ -573,3 +573,71 @@
    
 //      return res
 //  }
+
+// (function main(){
+//   let ans = searching()
+//   console.log("answer is: ",ans)
+//  }())
+ 
+ 
+//  function searching()
+//  {
+//    let str="   The          Quick Brown        Fox       Jumb Over         the lazy dog   "
+     
+//   let arr = str.trim().split(" ").reverse()
+ 
+//   let res=arr.filter((data)=>data!="")
+  
+  
+   
+  
+//  //  let arr = str.split(" ")
+//  //   console.log(arr)
+//  //   let left=0;
+//  //  let right=arr.length-1
+//  //   while(left<right)
+//  //    {
+ 
+//  //       [arr[left], arr[right]]=[arr[right], arr[left]]
+//  //       left++
+//  //       right--
+//  //     }
+ 
+   
+//      return res
+//  }
+
+
+
+(function main(){
+    let ans = searching()
+    console.log("answer is: ",ans)
+   }())
+   
+   
+   function searching()
+   {
+     let str="   The          Quick Brown        Fox       Jumb Over         the lazy dog   "
+       
+   //  let arr = str.trim().split(" ").reverse()
+   
+   //  let res=arr.filter((data)=>data!="")
+    
+    
+     
+    
+   //  let arr = str.split(" ")
+   //   console.log(arr)
+   //   let left=0;
+   //  let right=arr.length-1
+   //   while(left<right)
+   //    {
+   
+   //       [arr[left], arr[right]]=[arr[right], arr[left]]
+   //       left++
+   //       right--
+   //     }
+   
+     
+       return str.trim().split(" ").reverse().filter((data)=>data!="").join(" ")
+   }
