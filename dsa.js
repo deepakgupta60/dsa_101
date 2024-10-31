@@ -718,3 +718,47 @@
         return str
       }
   }
+
+
+
+  (function main()
+{
+  let ans =recurs(10)
+  console.log("Answer is: ", ans)
+ // recurs(10)
+ // console.log(ans)
+}())
+
+function recurs(n)
+{
+  
+  if(n<1)
+    {
+      return 0
+    }
+   return recurs(n-1)+n
+  // let sum=0;
+  // for(let i=1;i<=n;i++)
+  //   {
+  //     sum+=i
+  //   }
+  // return sum
+ //  if(n<=0) // terminating condition
+ //    {
+ //      return
+ //    }
+ //  console.log(n)
+ // recurs(n-1) 
+  
+  // recursive condition
+  // for(let i=n;i>=1;i--)
+  //   {
+  //     console.log(i)
+  //   }
+  // return "y"
+}
+
+// in recursive
+// -> base / terminating
+// -> recursive
+// -> function signature 
