@@ -471,3 +471,37 @@ let mat = [
  //   return res.join(" ")
  // }
  
+
+ (function main(){
+  let ans = magicSquare()
+  console.log("answer is: ", ans)
+}())
+
+
+function magicSquare()
+{
+  let mat = [
+    [4, 9, 2], 
+    [3, 5, 7], 
+    [8, 1, 6]
+  ] 
+  let diagonalSum=0;
+  let secondarySum=0;
+  let firstMat=0;
+  let lastMat=0;
+  
+  for(let i=0;i<mat.length;i++)
+    {
+      firstMat+=mat[0][i]
+      lastMat+=mat[i][mat.length-1]; //
+      diagonalSum+=mat[i][i]
+      secondarySum+=mat[i][mat.length-i-1]
+    }
+  
+  if(firstMat==lastMat && diagonalSum==secondarySum)
+    {
+      return "Magic Square"
+    }
+  
+  return "Not Magic Square"  
+}
