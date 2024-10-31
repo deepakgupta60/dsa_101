@@ -315,3 +315,159 @@ function isPalindrom()
 
 
 
+
+
+
+let mat = [
+  [4, 9, 2], [3, 5, 7], [8, 1, 6]
+ ]
+ 
+ let diagonalSum=0;
+ let secondarySum=0;
+ let firstRow=0;
+ 
+ for(let i=0;i<mat.length;i++)
+   {
+      firstRow=mat[0][i];
+   }
+ 
+ // let ans=sortedArr()
+ // let ans = palindrome()
+ // let ans = findMax()
+ // console.log("answer is:", ans)
+ 
+ // function iterateCols(mat, colNo)
+ // {
+ //   for(let i=0;i<mat.length;i++)
+ //     {
+ //       console.log(mat[i][colNo])
+ //     }
+ // }
+ 
+ // function iterateRols(mat, rowNo)
+ // {
+ //   for(let i=0;i<mat.length;i++)
+ //     {
+ //       console.log(mat[rowNo][i])
+ //     }
+ // }
+ 
+ // function matrix(mat)
+ // {
+ 
+ //   for(let i=0;i<mat.length;i++)
+ //     {
+ //       console.log(mat)
+ //       // for(let j=0;j<mat[i].length;j++)
+ //       //   {
+ //       //     console.log(mat[i][j])
+ //       //   }
+ //       // console.log(matrix[i])
+ //     }
+ //   // return matrix
+ 
+ //   // find the length of the matrix / means row
+ //   // console.log(matrix.length)
+ //   // find the length of the columsn length
+ //   // console.log(matrix[2].length)
+ // }
+ 
+ // function findMax()
+ // {
+ //   let arr=[2,4,10,2,8]
+ 
+ //   let max=arr[0] // for first one
+ 
+ //   for(let i=1;i<arr.length;i++)
+ //     {
+ //       if(arr[i]>max)
+ //       {
+ //         max=arr[i]
+ //       }
+ //     }
+ //   return max
+ 
+ // }
+ 
+ // function palindrome()
+ // {
+ 
+ //   let str="madam"
+ //   let left=0,right=str.length-1
+ 
+ //   while(left<right)
+ //   {
+ //     if(str[left]!==str[right])
+ //         {
+ //           return false
+ //         }
+ //     left++
+ //     right--
+ //   }
+ //   return true
+ //   // let str="maam"
+ //   // let rev = str.split("").reverse().join("")
+ //   // return str==rev
+ // }
+ 
+ // TC: 0(n)
+ // SC: 0(1)
+ // function sortedArr(){
+ //   let arr = [2,3,1,4]
+ //   let left=0, right=1;
+ //   while(right<arr.length)
+ //     {
+ //       if(arr[left]>arr[right])
+ //         {
+ //           return false
+ //         }
+ //       left++ // updation
+ //       right++ // updation
+ //     }
+ //   return true
+ // }
+ 
+ // moving the elements on same dirrection or opposite that is 2 pointer..
+ 
+ //
+ // function sortedArr(){
+ //   let arr = [3,4,5]
+ //   for(let i=0;i<arr.length-1;i++)
+ //     {
+ //       for(let j=i+1;j<arr.length;j++)
+ //         {
+ //           if(arr[i]>arr[j])
+ //           {
+ //             return false
+ //           }
+ //         }
+ //     }
+ //   return true;;
+ // }
+ 
+ //TC : 0(n2)
+ //SC : O(1)
+ 
+ // (function main(){
+ //   let ans = firstCapitalize()
+ //   console.log("Answer is: ", ans)
+ // }())
+ 
+ // function capitalize(word)
+ // {
+ //   return word[0].toUpperCase()+ word.slice(1)
+ // }
+ 
+ // function firstCapitalize()
+ // {
+ //   let str="the quick brown fox jumps over the lazy dog"
+ //   let arr = str.split(" ")
+ //   let res=[]
+ //   for(let i=0;i<arr.length;i++)
+ //     {
+ //       let word = capitalize(arr[i])
+ //       res.push(word)
+ //     }
+ //   return res.join(" ")
+ // }
+ 
