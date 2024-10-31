@@ -680,3 +680,41 @@
         return str
       }
   }
+
+
+  (function main(){
+    let ans = stringComp()
+    console.log("answer is: ", ans)
+  }())
+  
+  
+  function stringComp()
+  {
+    let str = "aabbccdddcc"
+    let curr=str[0]
+    let count=1;
+    let compress=""
+    for(let i=1;i<str.length;i++)
+      {
+        if(curr==str[i])
+          {
+            count++;
+          }
+        else
+          {
+            compress+=curr+count
+            count=1
+            curr=str[i]
+          }
+      }
+    compress+=curr+count
+    
+    if(compress.length<str.length)
+      {
+        return compress
+      }
+    else
+      {
+        return str
+      }
+  }
