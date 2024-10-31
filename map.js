@@ -141,3 +141,42 @@
      return maxKey
      
    }
+
+
+   (function main(){
+    let ans= mostOcc()
+    console.log("Answer is: ", ans)
+   }())
+   
+   function mostOcc()
+   {
+     let arr=[2,2,5,5,6,6,8]
+     arr.sort()
+     let mapData=new Map()
+     // let count=1;
+     for(let i=0;i<arr.length;i++)
+       {
+         if(!mapData.has(arr[i]))
+           {
+             mapData.set(arr[i],1)
+           }
+         else
+           {
+             mapData.set(arr[i], mapData.get(arr[i])+1)
+           }
+       }
+     
+     console.log(mapData)
+     let maxKey=0;
+     let maxVal=-1;
+     for(let [key, val] of mapData)
+       { // 
+         if(!maxVal<val)
+           {
+             maxVal=val
+             maxKey=key
+           }
+       }
+     return maxKey
+     
+   }
