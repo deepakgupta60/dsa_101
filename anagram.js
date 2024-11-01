@@ -7,8 +7,10 @@
   {
     
     let str="ABCD";
-    let str2="BCDA"
+    let str2="BCD"
   
+    if(str.length!=str2.length) return false
+    
     str=str.split("").sort().join("")
     str2=str2.split("").sort().join("")
     
