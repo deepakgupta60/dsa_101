@@ -222,4 +222,29 @@
        }
      return maxKey
      
-   } 
+   }   
+
+
+   (function main(){
+    let ans = testt()
+    console.log("Answer : ", ans)
+  }())
+  
+  function testt()
+  {
+    let arr = ["apple","banana","orange"]
+    let sets = new Set(arr);
+    sets.delete("apple")
+    sets.add("pikachu")
+    
+    
+    for(let keys of sets)
+      {
+        console.log(keys)
+      }
+    
+    console.log(sets.size)
+    // console.log("Test: ", sets.has("Apple"))
+    // console.log("Test: ", sets)
+    return "true"
+  }
