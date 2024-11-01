@@ -1,18 +1,21 @@
 (function main(){
-    let ans = isPrime()
-    console.log("Answer is: ", ans)
-  }())
-  
-  function isPrime()
-  {
-    let n=7
-    if(n<2) return false
-    for(let i=2;i<n;i++)
+  let ans = isPrime()
+  console.log("Answer is: ", ans)
+}())
+
+
+// 1 is not a prime number or not a composite number, its a natural no.
+
+function isPrime()
+{
+  let n=7
+  if(n<2) return false
+  for(let i=2;i<n;i++)
+    {
+      if(n%i==0)
       {
-        if(n%i==0)
-        {
-        return "Not Prime"
-        }
+      return "Not Prime"
       }
-    return "Prime Number"
-  }
+    }
+  return "Prime Number"
+}
