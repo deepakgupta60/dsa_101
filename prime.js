@@ -57,3 +57,47 @@ function isPrime()
   return  count
   
 }
+
+
+(function main(){
+  let ans = reverse()
+  console.log("answer: ", ans)
+}())
+
+function reverse()
+{
+  let rev=0;
+  let n=7145;
+  while(n>0)
+    {
+      rev=rev*10+n%10;
+      n=Math.floor(n/10)
+    }
+  return rev
+}
+
+
+(function main(){
+  let ans = reverse()
+  console.log("answer: ", ans)
+}())
+
+function reverse()
+{
+  
+  let p1=0;
+  let p2=1;
+  let fib=0
+     let fibbonaci=[p1,p2]
+  let n=10
+  for(let i=0;i<n;i++)
+    {
+      fib=p1+p2;
+      fibbonaci.push(fib)
+      p1=p2;
+      p2=fib
+    }
+  
+  console.log(fibbonaci)
+  // return fib
+}
